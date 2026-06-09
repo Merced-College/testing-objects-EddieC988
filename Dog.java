@@ -15,7 +15,7 @@ public class Dog {
         age = 0;
         breed = "Mixed";
     }
-
+    
     public Dog(String name, int age, String breed) { // parameterized constructor
         this.name = name;
         this.age = age;

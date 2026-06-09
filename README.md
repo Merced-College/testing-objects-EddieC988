@@ -14,4 +14,10 @@ breed = null (primative)
 
 4.@Override is useful because it tells the compiler “I intend to override a parent-class method.” If I accidentally misspell the method name or use the wrong signature, the compiler will catch it immediately rather than silently creating a new, unrelated method.
 
-5.
+5. It is standardized and it keeps it secure.
+
+Refelction questions
+
+1. Before toString, what printed when you printed an object? Why?Before overriding toString, printing a Dog object displayed the default Object.toString() result: ClassName@hashcode (e.g., Dog@1b6d3586). Java calls toString() automatically when you concatenate an object with a String or pass it to println. Because we hadn’t provided our own version, it used the inherited one from Object, which just shows the class name and the object’s memory hash.
+
+2. What changed after you added the default constructor? After adding the parameterized constructor?After the default constructor: new Dog() (or new Book()) no longer relied on Java’s field-level zero-defaults. Instead, the object came to life with sensible values ("Unknown", 0, "Mixed"). The object is immediately usable without further setup. After the parameterized constructor: We gained the ability to create fully customized objects in a single line (new Dog("Rex", 4, "Collie")). It also showed what happens when only the parameterized constructor exists — calling new Dog() becomes a compile error, demonstrating that Java only supplies a free no-arg constructor when you define no constructors at all.

@@ -3,4 +3,15 @@
 
 Write your answers to your reflection questions here. Write your name, the date and the answers.
 
-Make sure to push your code to your repo!
+Anwsers:
+1.Dog@515f550a, This is Java’s default Object.toString() implementation, which every class inherits automatically when no custom toString is defined.
+
+2.name = null (reference)
+age = 0 (primative)
+breed = null (primative)
+
+3.Before constructors, all fields got Java’s automatic defaults (null, 0, false).After adding the default constructor, the object starts with safe, human-readable values ("Unknown Title", 0, false).After adding the parameterized constructor, we can supply specific values at creation time, so the object is immediately in a meaningful, fully-initialized state.
+
+4.@Override is useful because it tells the compiler “I intend to override a parent-class method.” If I accidentally misspell the method name or use the wrong signature, the compiler will catch it immediately rather than silently creating a new, unrelated method.
+
+5.

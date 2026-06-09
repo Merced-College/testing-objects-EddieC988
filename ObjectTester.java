@@ -47,6 +47,35 @@ public class ObjectTester {
         System.out.println("d3 age via getter = " + d3.getAge());
         System.out.println("d3 now = " + d3);
 
+    // Making a default book object
+        Book b1 = new Book();
+        System.out.println("\nDefaults for b1 fields (before any assignment):");
+        System.out.println("title = "  + b1.getTitle());   // expected: Unknown Title
+        System.out.println("pages = "  + b1.getPages());   // expected: 0
+        System.out.println("inPrint = "+ b1.isInPrint());  // expected: false
+
+        // Constructors
+        Book b2 = new Book();
+        System.out.println("\nb2 after default constructor:");
+        System.out.println("title = " + b2.getTitle() + ", pages = " + b2.getPages() + ", inPrint = " + b2.isInPrint());
+
+        Book b3 = new Book("The Great Gatsby", 180, true);
+        System.out.println("\nb3 after parameterized constructor:");
+        System.out.println("title = " + b3.getTitle() + ", pages = " + b3.getPages() + ", inPrint = " + b3.isInPrint());
+
+        // toString
+        System.out.println("\nPrinting Book objects after overriding toString():");
+        System.out.println("b2 = " + b2);
+        System.out.println("b3 = " + b3);
+
+        // Setters / getters
+        System.out.println("\nMutating via setters after making fields private:");
+        b3.setTitle("1984");
+        b3.setPages(328);
+        b3.setInPrint(false);
+        System.out.println("b3 title via getter = " + b3.getTitle());
+        System.out.println("b3 now = " + b3);
+
     }//end main
 
 }//end class

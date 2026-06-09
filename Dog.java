@@ -1,6 +1,6 @@
-//Eduardo Cerna
+//Eduardo
 //6/8/26
-//Dog class for my Dog class
+//Dog class for my Dog objects
 
 public class Dog {
 
@@ -15,7 +15,7 @@ public class Dog {
         age = 0;
         breed = "Mixed";
     }
-    
+
     public Dog(String name, int age, String breed) { // parameterized constructor
         this.name = name;
         this.age = age;
